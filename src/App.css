@@ -1,0 +1,157 @@
+/* 
+.header{
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  padding-left: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 35%;
+  background: rgb(225, 223, 223);
+}
+
+.input-holder{
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  padding-left: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 35%;
+  background: rgb(225, 223, 223);
+}
+
+button{
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 0;
+  border: none;
+}
+
+.input{
+  width: 60%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ */
+@import "tailwindcss";
+
+.app{
+  width:50%;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;
+
+}
+
+body{
+justify-content: center;
+}
+
+.input-holder{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 5px;
+  border-radius: 10px;
+  background: #e1e1e16a;
+}
+
+input{
+  outline: none;
+}
+
+button{
+  
+  border-radius: 8px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+
+.weather-card{
+  background: #e1e1e16a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 10px;
+  border-radius: 10px;
+  
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 10px;
+}
+
+.data{
+  display: flex;
+  font-size: smaller;
+  justify-content: space-between;
+}
+
+.data:nth-child(2){
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+
+  .input-holder{
+    width: 100%;
+    margin: 0;
+  }
+
+  .app{
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+    padding: 0px;
+  }
+
+  body{
+   
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .input-holder{
+    width: 100%;
+  }
+
+  .weather-card{
+    justify-content: center;
+    justify-items: center;
+    font-size: x-large;
+    margin: 0;
+    width: 100%;
+    min-height: 750px;
+  }
+
+  .details{
+    font-size: xx-large;
+  }
+
+  .lower-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .data{
+    flex-direction: row;
+    font-weight: 100;
+    /* font-size:xx-small; */
+    justify-content: start;
+  }
+}
+
