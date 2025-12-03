@@ -1,12 +1,26 @@
-import type { JSX } from 'react';
-import { WiDaySunny, WiNightClear, WiCloud, WiCloudy, WiDayCloudy, WiNightAltCloudy, WiRain, WiDayRain, WiNightAltRain, WiThunderstorm, WiSnow, WiFog, WiWindy, WiDayHaze, WiHumidity, WiStrongWind, WiSunrise, WiSunset, } from "react-icons/wi";
+import type { JSX } from "react";
+import {
+  WiDaySunny,
+  WiNightClear,
+  WiCloud,
+  WiCloudy,
+  WiDayCloudy,
+  WiNightAltCloudy,
+  WiRain,
+  WiDayRain,
+  WiNightAltRain,
+  WiThunderstorm,
+  WiSnow,
+  WiFog,
+  WiWindy,
+  WiHumidity,
+} from "react-icons/wi";
 import { VscGlobe } from "react-icons/vsc";
 import { CiLocationOn } from "react-icons/ci";
 
-
 export const weatherIcons: Record<string, JSX.Element> = {
-  "lon": <VscGlobe />,
-  "lat": <CiLocationOn />,
+  lon: <VscGlobe />,
+  lat: <CiLocationOn />,
   "111": <WiWindy />,
   "112": <WiHumidity />,
   "01d": <WiDaySunny />,
