@@ -15,6 +15,7 @@ import {
   WiWindy,
   WiHumidity,
 } from "react-icons/wi";
+
 import { VscGlobe } from "react-icons/vsc";
 import { CiLocationOn } from "react-icons/ci";
 
